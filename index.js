@@ -60,8 +60,6 @@ const getChecksumGuess = (rankMap) => {
 };
 
 const exec = (inputList) => {
-    const listNames = inputList.map(data => getRoomName(data));
-
     const result = inputList.reduce((sum, data) => {
         if (!data || data === "") {
             return sum;
